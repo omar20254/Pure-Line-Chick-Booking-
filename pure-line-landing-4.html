@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pure Line | مزرعة تفريخ وتسمين الرومي الفرنسي الدرجة الأولى</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive-950:#232b18;
+    --olive-900:#2f3a1e;
+    --olive-800:#3d4a28;
+    --olive-700:#4c5c32;
+    --gold-600:#b8842e;
+    --gold-500:#d9a441;
+    --gold-400:#e8bd63;
+    --cream:#faf5e8;
+    --cream-2:#f2ead4;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Tajawal',sans-serif; background:var(--cream); color:var(--olive-950);}
+  .font-display{font-family:'Cairo',sans-serif;}
+  .bg-olive-950{background-color:var(--olive-950);}
+  .bg-olive-900{background-color:var(--olive-900);}
+  .bg-olive-800{background-color:var(--olive-800);}
+  .text-olive-900{color:var(--olive-900);}
+  .text-olive-800{color:var(--olive-800);}
+  .text-gold-500{color:var(--gold-500);}
+  .text-gold-600{color:var(--gold-600);}
+  .bg-gold-500{background-color:var(--gold-500);}
+  .bg-gold-600{background-color:var(--gold-600);}
+  .border-gold-500{border-color:var(--gold-500);}
+  .bg-cream{background-color:var(--cream);}
+  .bg-cream-2{background-color:var(--cream-2);}
+
+  .feather-divider{
+    height:14px;
+    background-image: repeating-linear-gradient(-55deg, var(--gold-500) 0 10px, transparent 10px 20px);
+    opacity:.55;
+  }
+  .grain{
+    background-image: radial-gradient(var(--olive-900) 0.6px, transparent 0.6px);
+    background-size: 14px 14px;
+    opacity:.05;
+  }
+  .card-hover{transition: transform .35s ease, box-shadow .35s ease;}
+  .card-hover:hover{transform: translateY(-6px); box-shadow: 0 18px 40px -18px rgba(35,43,24,.35);}
+  .field-input{
+    background:#fffef9;
+    border:1.5px solid #e3d7b4;
+  }
+  .field-input:focus{
+    outline:none;
+    border-color:var(--gold-500);
+    box-shadow:0 0 0 4px rgba(217,164,65,.18);
+  }
+  .whatsapp-float{
+    position:fixed; bottom:22px; left:22px; z-index:50;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @media (prefers-reduced-motion: reduce){
+    .whatsapp-float{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.show{opacity:1; transform:translateY(0);}
+  .radio-card:has(input:checked){
+    border-color:var(--gold-500);
+    background:rgba(217,164,65,.12);
+  }
+</style>
+</head>
+<body class="bg-cream">
+
+<!-- ===== HEADER ===== -->
+<header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-gold-500/30">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://i.top4top.io/p_3884pua0l0.jpg" alt="شعار مزرعة Pure Line" class="h-14 w-14 rounded-full object-cover ring-2 ring-gold-500 shadow-md">
+      <div>
+        <p class="font-display font-black text-lg text-olive-900 leading-tight">Pure Line</p>
+        <p class="text-[11px] text-olive-800/70 leading-tight">تسمين وتفريخ الرومي الفرنسي</p>
+      </div>
+    </div>
+    <a href="#order" class="hidden sm:inline-block bg-olive-800 hover:bg-olive-900 text-cream font-bold text-sm px-5 py-2.5 rounded-full transition">احجز كتاكيتك الآن</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grain pointer-events-none"></div>
+  <div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-gold-500/20 blur-3xl"></div>
+  <div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-olive-800/15 blur-3xl"></div>
+
+  <div class="max-w-6xl mx-auto px-5 pt-14 pb-20 relative">
+    <p class="reveal inline-block font-display text-xs font-bold tracking-widest text-gold-600 bg-gold-500/10 border border-gold-500/40 rounded-full px-4 py-1.5 mb-6">
+      سلالة فرنسية أصيلة · الدرجة الأولى
+    </p>
+    <h1 class="reveal font-display font-black text-4xl sm:text-6xl leading-[1.15] text-olive-950 max-w-3xl">
+      كتاكيت رومي فرنسي أصلية،
+      <span class="text-gold-600">من التفريخ إلى مزرعتك</span>
+    </h1>
+    <p class="reveal text-olive-900/80 text-lg mt-6 max-w-xl leading-relaxed">
+      نحضّن ونسمّن سلالة الرومي الفرنسي درجة أولى بأحدث معايير الرعاية الصحية والتغذية العلمية، لنسلّمك كتاكيت قوية البنية عالية معدل النمو، جاهزة للتربية من أول يوم.
+    </p>
+    <div class="reveal flex flex-wrap gap-4 mt-9">
+      <a href="#order" class="bg-gold-600 hover:bg-gold-500 text-olive-950 font-display font-extrabold px-8 py-3.5 rounded-full shadow-lg shadow-gold-600/30 transition">
+        احجز كتاكيتك الآن
+      </a>
+      <a href="#about" class="border-2 border-olive-800 text-olive-900 font-bold px-8 py-3.5 rounded-full hover:bg-olive-800 hover:text-cream transition">
+        تعرّف على المزرعة
+      </a>
+    </div>
+  </div>
+  <div class="feather-divider"></div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="bg-cream-2">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="font-display text-sm font-bold text-gold-600 mb-2">من نحن</p>
+        <h2 class="font-display font-black text-3xl text-olive-950 mb-5">جودة تبدأ من البيضة</h2>
+        <p class="text-olive-900/85 leading-loose mb-4">
+          مزرعة Pure Line متخصصة في تفريخ وتسمين الرومي الفرنسي درجة أولى، باستخدام سلالات أمهات معتمدة ومعقّمة، وحاضنات تعمل بضبط دقيق للحرارة والرطوبة لضمان أعلى نسبة فقس وأقوى كتاكيت.
+        </p>
+        <p class="text-olive-900/85 leading-loose">
+          كل دفعة كتاكيت تمر بمتابعة بيطرية وتغذية علمية منذ اللحظة الأولى، لنضمن لك كتاكيت متجانسة الحجم، نشيطة، وجاهزة للنمو السريع في مزرعتك.
+        </p>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4">
+        <div class="bg-cream rounded-2xl p-5 border border-gold-500/30 card-hover">
+          <p class="font-display font-black text-3xl text-gold-600">%98+</p>
+          <p class="text-sm text-olive-900/80 mt-1">نسبة فقس ناجحة</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-5 border border-gold-500/30 card-hover">
+          <p class="font-display font-black text-3xl text-gold-600">درجة 1</p>
+          <p class="text-sm text-olive-900/80 mt-1">سلالة فرنسية معتمدة</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-5 border border-gold-500/30 card-hover">
+          <p class="font-display font-black text-3xl text-gold-600">+15 سنة</p>
+          <p class="text-sm text-olive-900/80 mt-1">خبرة في المجال</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-5 border border-gold-500/30 card-hover">
+          <p class="font-display font-black text-3xl text-gold-600">توصيل</p>
+          <p class="text-sm text-olive-900/80 mt-1">لكل المحافظات</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="feather-divider"></div>
+
+<!-- ===== FEATURES ===== -->
+<section class="max-w-6xl mx-auto px-5 py-16">
+  <h2 class="reveal font-display font-black text-3xl text-olive-950 text-center mb-3">لماذا Pure Line</h2>
+  <p class="reveal text-center text-olive-900/70 mb-12 max-w-xl mx-auto">أربعة أسباب تجعل مربّي الرومي يثقون بكتاكيتنا</p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal bg-white rounded-2xl p-6 border border-gold-500/20 card-hover">
+      <div class="w-11 h-11 rounded-full bg-olive-800 text-gold-400 flex items-center justify-center mb-4 font-display font-bold">1</div>
+      <h3 class="font-display font-bold text-olive-950 mb-2">سلالة أصيلة</h3>
+      <p class="text-sm text-olive-900/75 leading-relaxed">أمهات فرنسية معتمدة درجة أولى بدون خلط سلالات.</p>
+    </div>
+    <div class="reveal bg-white rounded-2xl p-6 border border-gold-500/20 card-hover">
+      <div class="w-11 h-11 rounded-full bg-olive-800 text-gold-400 flex items-center justify-center mb-4 font-display font-bold">2</div>
+      <h3 class="font-display font-bold text-olive-950 mb-2">تفريخ متطور</h3>
+      <p class="text-sm text-olive-900/75 leading-relaxed">حاضنات حديثة بضبط دقيق للحرارة والرطوبة.</p>
+    </div>
+    <div class="reveal bg-white rounded-2xl p-6 border border-gold-500/20 card-hover">
+      <div class="w-11 h-11 rounded-full bg-olive-800 text-gold-400 flex items-center justify-center mb-4 font-display font-bold">3</div>
+      <h3 class="font-display font-bold text-olive-950 mb-2">أوزان قياسية</h3>
+      <p class="text-sm text-olive-900/75 leading-relaxed">الإناث تصل إلى 13-14 كجم، والذكور 23-26 كجم.</p>
+    </div>
+    <div class="reveal bg-white rounded-2xl p-6 border border-gold-500/20 card-hover">
+      <div class="w-11 h-11 rounded-full bg-olive-800 text-gold-400 flex items-center justify-center mb-4 font-display font-bold">4</div>
+      <h3 class="font-display font-bold text-olive-950 mb-2">تسليم سريع</h3>
+      <p class="text-sm text-olive-900/75 leading-relaxed">استلام من المزرعة أو توصيل لعنوانك مباشرة.</p>
+    </div>
+  </div>
+</section>
+
+<div class="feather-divider"></div>
+
+<!-- ===== PROFIT CALCULATOR ===== -->
+<section id="calculator" class="bg-cream-2">
+  <div class="max-w-5xl mx-auto px-5 py-16">
+    <div class="text-center mb-10">
+      <p class="reveal font-display text-sm font-bold text-gold-600 mb-2">احسب مشروعك</p>
+      <h2 class="reveal font-display font-black text-3xl text-olive-950">حاسبة التكلفة والأرباح المتوقعة</h2>
+      <p class="reveal text-olive-900/70 mt-3 max-w-lg mx-auto">اكتب عدد الكتاكيت وشوف تقدير العلف والوزن والربح لحظيًا</p>
+    </div>
+
+    <div class="reveal bg-white rounded-3xl p-6 sm:p-9 shadow-lg border border-gold-500/20">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label for="calcQty" class="block text-sm font-bold text-olive-900 mb-1.5">عدد الكتاكيت</label>
+          <input id="calcQty" type="number" min="1" value="100" class="field-input w-full rounded-xl px-4 py-3 text-olive-950 text-lg font-bold">
+        </div>
+        <div>
+          <label for="calcMalePct" class="block text-sm font-bold text-olive-900 mb-1.5">نسبة الذكور (%)</label>
+          <input id="calcMalePct" type="number" min="0" max="100" value="50" class="field-input w-full rounded-xl px-4 py-3 text-olive-950">
+        </div>
+      </div>
+
+      <details class="mt-6 group">
+        <summary class="cursor-pointer text-sm font-bold text-gold-600 select-none">تعديل الأسعار والافتراضات ▾</summary>
+        <div class="grid sm:grid-cols-3 gap-4 mt-4">
+          <div>
+            <label for="calcChickPrice" class="block text-xs font-bold text-olive-900 mb-1">سعر الكتكوت (جنيه)</label>
+            <input id="calcChickPrice" type="number" min="0" value="60" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+          <div>
+            <label for="calcFeedPrice" class="block text-xs font-bold text-olive-900 mb-1">سعر كيلو العلف (جنيه)</label>
+            <input id="calcFeedPrice" type="number" min="0" value="18" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+          <div>
+            <label for="calcFCR" class="block text-xs font-bold text-olive-900 mb-1">معدل التحويل العلفي</label>
+            <input id="calcFCR" type="number" min="0" step="0.1" value="2.8" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+          <div>
+            <label for="calcSalePrice" class="block text-xs font-bold text-olive-900 mb-1">سعر بيع الكيلو (جنيه)</label>
+            <input id="calcSalePrice" type="number" min="0" value="90" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+          <div>
+            <label for="calcMaleWeight" class="block text-xs font-bold text-olive-900 mb-1">وزن بيع الذكر (كجم)</label>
+            <input id="calcMaleWeight" type="number" min="0" step="0.5" value="24.5" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+          <div>
+            <label for="calcFemaleWeight" class="block text-xs font-bold text-olive-900 mb-1">وزن بيع الأنثى (كجم)</label>
+            <input id="calcFemaleWeight" type="number" min="0" step="0.5" value="13.5" class="field-input w-full rounded-lg px-3 py-2 text-sm text-olive-950">
+          </div>
+        </div>
+      </details>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+        <div class="bg-cream-2 rounded-xl p-4 text-center">
+          <p class="text-xs text-olive-900/70 mb-1">الوزن الحي الإجمالي</p>
+          <p id="outWeight" class="font-display font-black text-xl text-olive-950">0 كجم</p>
+        </div>
+        <div class="bg-cream-2 rounded-xl p-4 text-center">
+          <p class="text-xs text-olive-900/70 mb-1">كمية العلف المتوقعة</p>
+          <p id="outFeed" class="font-display font-black text-xl text-olive-950">0 كجم</p>
+        </div>
+        <div class="bg-cream-2 rounded-xl p-4 text-center">
+          <p class="text-xs text-olive-900/70 mb-1">التكلفة التقريبية</p>
+          <p id="outCost" class="font-display font-black text-xl text-olive-950">0 جنيه</p>
+        </div>
+        <div class="bg-olive-800 rounded-xl p-4 text-center">
+          <p class="text-xs text-cream/70 mb-1">الربح التقريبي</p>
+          <p id="outProfit" class="font-display font-black text-xl text-gold-400">0 جنيه</p>
+        </div>
+      </div>
+      <p class="text-xs text-olive-900/50 text-center mt-5">* الأرقام تقديرية للاسترشاد فقط بناءً على متوسطات، وتقدر تعدّل الأسعار فوق حسب السوق عندك.</p>
+    </div>
+  </div>
+</section>
+
+<div class="feather-divider"></div>
+
+<!-- ===== SMART BROODING GUIDE ===== -->
+<section id="guide" class="max-w-5xl mx-auto px-5 py-16">
+  <div class="text-center mb-10">
+    <p class="reveal font-display text-sm font-bold text-gold-600 mb-2">حصريًا لعملاء Pure Line</p>
+    <h2 class="reveal font-display font-black text-3xl text-olive-950">دليل التحضين الذكي - أول 14 يوم</h2>
+    <p class="reveal text-olive-900/70 mt-3 max-w-lg mx-auto">برنامج يومي للحرارة والتهوية والتغذية والتحصين، ونرسله لك تباعًا على واتساب يوم بيوم بعد الاستلام</p>
+  </div>
+
+  <div class="reveal bg-white rounded-3xl p-5 sm:p-8 shadow-lg border border-gold-500/20">
+    <div id="dayTabs" class="flex flex-wrap gap-2 justify-center mb-6"></div>
+    <div id="dayPanel" class="bg-cream-2 rounded-2xl p-6 text-center"></div>
+    <p class="text-xs text-olive-900/50 text-center mt-5">* برنامج استرشادي عام قابل للتعديل حسب برنامج المزرعة الفعلي.</p>
+
+    <div class="mt-7 flex flex-col sm:flex-row items-center justify-between gap-4 bg-olive-950 rounded-2xl p-5">
+      <p class="text-cream text-sm text-center sm:text-right">عايز تستلم رسالة يومية بالدليل كامل على واتساب لأول 14 يوم؟</p>
+      <a id="guideWhatsapp" href="#" target="_blank" class="shrink-0 bg-gold-600 hover:bg-gold-500 text-olive-950 font-display font-extrabold px-6 py-3 rounded-full transition">اشترك في الدليل اليومي</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORDER FORM ===== -->
+<section id="order" class="bg-olive-950 relative overflow-hidden">
+  <div class="absolute inset-0 grain pointer-events-none opacity-[.08]" style="filter:invert(1);"></div>
+  <div class="max-w-3xl mx-auto px-5 py-16 relative">
+    <div class="text-center mb-10">
+      <p class="reveal font-display text-sm font-bold text-gold-400 mb-2">احجز الآن</p>
+      <h2 class="reveal font-display font-black text-3xl sm:text-4xl text-cream">نموذج حجز الكتاكيت</h2>
+      <p class="reveal text-cream/70 mt-3">املأ بياناتك وسيتم تجهيز طلبك وإرساله مباشرة عبر واتساب</p>
+    </div>
+
+    <form id="orderForm" class="reveal bg-cream rounded-3xl p-6 sm:p-9 shadow-2xl space-y-5">
+      <div>
+        <label for="fullName" class="block text-sm font-bold text-olive-900 mb-1.5">اسم العميل الكامل</label>
+        <input required id="fullName" type="text" placeholder="مثال: محمد أحمد علي" class="field-input w-full rounded-xl px-4 py-3 text-olive-950">
+      </div>
+
+      <div>
+        <label for="phone" class="block text-sm font-bold text-olive-900 mb-1.5">رقم الهاتف (متصل بواتساب)</label>
+        <input required id="phone" type="tel" placeholder="01xxxxxxxxx" class="field-input w-full rounded-xl px-4 py-3 text-olive-950">
+      </div>
+
+      <div>
+        <label for="address" class="block text-sm font-bold text-olive-900 mb-1.5">المحافظة / العنوان</label>
+        <input required id="address" type="text" placeholder="مثال: الشرقية - مركز أبو حماد" class="field-input w-full rounded-xl px-4 py-3 text-olive-950">
+      </div>
+
+      <div>
+        <label for="quantity" class="block text-sm font-bold text-olive-900 mb-1.5">عدد الكتاكيت المطلوبة</label>
+        <input required id="quantity" type="number" min="1" placeholder="مثال: 100" class="field-input w-full rounded-xl px-4 py-3 text-olive-950">
+      </div>
+
+      <div>
+        <p class="block text-sm font-bold text-olive-900 mb-2.5">طريقة الاستلام</p>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="radio-card cursor-pointer border-2 border-[#e3d7b4] rounded-xl p-4 text-center transition">
+            <input type="radio" name="delivery" value="استلام من المعمل" class="sr-only" checked>
+            <span class="block font-bold text-olive-950">استلام من المعمل</span>
+          </label>
+          <label class="radio-card cursor-pointer border-2 border-[#e3d7b4] rounded-xl p-4 text-center transition">
+            <input type="radio" name="delivery" value="توصيل للمكان" class="sr-only">
+            <span class="block font-bold text-olive-950">توصيل للمكان</span>
+          </label>
+        </div>
+      </div>
+
+      <label class="flex items-center gap-2.5 bg-cream-2 rounded-xl px-4 py-3 cursor-pointer">
+        <input id="guideOptIn" type="checkbox" checked class="w-4 h-4 accent-[#b8842e]">
+        <span class="text-sm font-bold text-olive-900">أرغب بالاشتراك في دليل التحضين اليومي عبر واتساب (أول 14 يوم)</span>
+      </label>
+
+      <button type="submit" class="w-full flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-500 text-olive-950 font-display font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-gold-600/30 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path d="M17.6 6.32A8.86 8.86 0 0 0 11.9 4a8.9 8.9 0 0 0-7.7 13.4L3 21l3.7-1.2a8.9 8.9 0 0 0 5.2 1.67 8.9 8.9 0 0 0 6.3-15.15Zm-5.7 13.66a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.24.72.73-2.18-.18-.28a7.4 7.4 0 1 1 5.73 2.93Zm4.06-5.55c-.22-.11-1.3-.64-1.5-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.14-.22.22-.37.07-.15.04-.28-.02-.4-.07-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.42c-.15 0-.4.05-.6.28-.2.22-.8.78-.8 1.9s.82 2.2.93 2.36c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.3-.53 1.49-1.04.18-.51.18-.94.13-1.03-.05-.1-.2-.15-.42-.26Z"/>
+        </svg>
+        تأكيد الحجز عبر واتساب
+      </button>
+      <p class="text-center text-xs text-olive-900/60">سيتم تحويلك تلقائيًا لتطبيق واتساب لإرسال طلبك</p>
+    </form>
+  </div>
+  <div class="feather-divider"></div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-cream-2 border-t border-gold-500/30">
+  <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col sm:flex-row items-center justify-between gap-5">
+    <div class="flex items-center gap-3">
+      <img src="https://i.top4top.io/p_3884pua0l0.jpg" alt="شعار Pure Line" class="h-10 w-10 rounded-full object-cover ring-2 ring-gold-500">
+      <div>
+        <p class="font-display font-black text-olive-900">Pure Line</p>
+        <p class="text-xs text-olive-900/60">تسمين وتفريخ الرومي الفرنسي درجة أولى</p>
+      </div>
+    </div>
+    <a href="https://wa.me/201205690067" target="_blank" class="text-sm font-bold text-olive-900 hover:text-gold-600 transition">
+      تواصل معنا عبر واتساب: 201205690067+
+    </a>
+  </div>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+<a href="https://wa.me/201205690067" target="_blank" aria-label="تواصل عبر واتساب" class="whatsapp-float w-14 h-14 rounded-full bg-[#25D366] shadow-xl flex items-center justify-center hover:scale-105 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" class="w-7 h-7">
+    <path d="M17.6 6.32A8.86 8.86 0 0 0 11.9 4a8.9 8.9 0 0 0-7.7 13.4L3 21l3.7-1.2a8.9 8.9 0 0 0 5.2 1.67 8.9 8.9 0 0 0 6.3-15.15Zm-5.7 13.66a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.24.72.73-2.18-.18-.28a7.4 7.4 0 1 1 5.73 2.93Zm4.06-5.55c-.22-.11-1.3-.64-1.5-.72-.2-.07-.35-.11-.5.11-.14.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.4.11-.13.14-.22.22-.37.07-.15.04-.28-.02-.4-.07-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.42c-.15 0-.4.05-.6.28-.2.22-.8.78-.8 1.9s.82 2.2.93 2.36c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.3-.53 1.49-1.04.18-.51.18-.94.13-1.03-.05-.1-.2-.15-.42-.26Z"/>
+  </svg>
+</a>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Order form -> WhatsApp
+  const WHATSAPP_NUMBER = "201205690067";
+  const form = document.getElementById('orderForm');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const fullName = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const quantity = document.getElementById('quantity').value.trim();
+    const delivery = form.querySelector('input[name="delivery"]:checked').value;
+    const wantsGuide = document.getElementById('guideOptIn').checked ? 'نعم ✅' : 'لا';
+
+    const message =
+`مرحبًا، أرغب في حجز كتاكيت رومي فرنسي من مزرعة Pure Line 🦃
+
+👤 اسم العميل: ${fullName}
+📞 رقم الهاتف: ${phone}
+📍 المحافظة / العنوان: ${address}
+🔢 عدد الكتاكيت المطلوبة: ${quantity}
+🚚 طريقة الاستلام: ${delivery}
+📋 الاشتراك في دليل التحضين اليومي: ${wantsGuide}
+
+برجاء تأكيد الحجز، شكرًا لكم.`;
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  });
+
+  // ===== Profit / cost calculator =====
+  const calcIds = ['calcQty','calcMalePct','calcChickPrice','calcFeedPrice','calcFCR','calcSalePrice','calcMaleWeight','calcFemaleWeight'];
+  const calcEls = Object.fromEntries(calcIds.map(id => [id, document.getElementById(id)]));
+  const fmt = n => Math.max(0, Math.round(n)).toLocaleString('en-US');
+
+  function runCalc(){
+    const qty = Math.max(0, parseFloat(calcEls.calcQty.value) || 0);
+    const malePct = Math.min(100, Math.max(0, parseFloat(calcEls.calcMalePct.value) || 0)) / 100;
+    const chickPrice = Math.max(0, parseFloat(calcEls.calcChickPrice.value) || 0);
+    const feedPrice = Math.max(0, parseFloat(calcEls.calcFeedPrice.value) || 0);
+    const fcr = Math.max(0, parseFloat(calcEls.calcFCR.value) || 0);
+    const salePrice = Math.max(0, parseFloat(calcEls.calcSalePrice.value) || 0);
+    const maleW = Math.max(0, parseFloat(calcEls.calcMaleWeight.value) || 0);
+    const femaleW = Math.max(0, parseFloat(calcEls.calcFemaleWeight.value) || 0);
+
+    const maleCount = qty * malePct;
+    const femaleCount = qty * (1 - malePct);
+    const totalWeight = (maleCount * maleW) + (femaleCount * femaleW);
+    const feedNeeded = totalWeight * fcr;
+    const totalCost = (qty * chickPrice) + (feedNeeded * feedPrice);
+    const totalRevenue = totalWeight * salePrice;
+    const profit = totalRevenue - totalCost;
+
+    document.getElementById('outWeight').textContent = `${fmt(totalWeight)} كجم`;
+    document.getElementById('outFeed').textContent = `${fmt(feedNeeded)} كجم`;
+    document.getElementById('outCost').textContent = `${fmt(totalCost)} جنيه`;
+    const profitEl = document.getElementById('outProfit');
+    profitEl.textContent = `${fmt(profit)} جنيه`;
+    profitEl.style.color = profit < 0 ? '#e8bd63' : '';
+  }
+  calcIds.forEach(id => calcEls[id].addEventListener('input', runCalc));
+  runCalc();
+
+  // ===== Smart 14-day brooding guide =====
+  const brooding = [
+    {t:35, v:'تهوية خفيفة جدًا - غلق الفتحات', f:'ماء دافئ + بادئ فومي', n:'أول يوم: راقب توزيع الكتاكيت حول دفاية التحضين'},
+    {t:34, v:'تهوية خفيفة', f:'علف بادئ متاح باستمرار', n:'تأكد من سهولة وصول الكتاكيت للعلف والماء'},
+    {t:33, v:'تهوية خفيفة', f:'علف بادئ', n:'راقب حركة الكتاكيت ونشاطها'},
+    {t:32, v:'زيادة طفيفة في التهوية', f:'علف بادئ', n:'يوم 4: تابع انتظام الزيادة في الوزن'},
+    {t:31, v:'تهوية متوسطة', f:'علف بادئ', n:'—'},
+    {t:30, v:'تهوية متوسطة', f:'علف بادئ', n:'—'},
+    {t:29, v:'تهوية متوسطة', f:'علف بادئ', n:'يوم 7: التحصين الأول حسب برنامج المزرعة'},
+    {t:28, v:'تهوية متوسطة', f:'بدء التحويل التدريجي لعلف نامي', n:'—'},
+    {t:27, v:'تهوية متزايدة', f:'علف نامي', n:'—'},
+    {t:26, v:'تهوية متزايدة', f:'علف نامي', n:'—'},
+    {t:25, v:'تهوية جيدة', f:'علف نامي', n:'—'},
+    {t:24, v:'تهوية جيدة', f:'علف نامي', n:'يوم 12: راقب توحد حجم الدفعة'},
+    {t:24, v:'تهوية طبيعية', f:'علف نامي', n:'—'},
+    {t:23, v:'تهوية طبيعية - استعداد لرفع الدفايات', f:'علف نامي', n:'يوم 14: تقييم عام لأداء الدفعة والانتقال للمرحلة التالية'},
+  ];
+
+  const tabsWrap = document.getElementById('dayTabs');
+  const panel = document.getElementById('dayPanel');
+
+  function renderDay(day){
+    const d = brooding[day - 1];
+    panel.innerHTML = `
+      <p class="font-display font-black text-2xl text-olive-950 mb-4">اليوم ${day}</p>
+      <div class="grid sm:grid-cols-3 gap-4 text-right">
+        <div class="bg-white rounded-xl p-4">
+          <p class="text-xs text-olive-900/60 mb-1">🌡️ درجة الحرارة المطلوبة</p>
+          <p class="font-bold text-olive-950">${d.t}° مئوية</p>
+        </div>
+        <div class="bg-white rounded-xl p-4">
+          <p class="text-xs text-olive-900/60 mb-1">💨 التهوية</p>
+          <p class="font-bold text-olive-950">${d.v}</p>
+        </div>
+        <div class="bg-white rounded-xl p-4">
+          <p class="text-xs text-olive-900/60 mb-1">🌾 التغذية</p>
+          <p class="font-bold text-olive-950">${d.f}</p>
+        </div>
+      </div>
+      <p class="text-sm text-olive-900/75 mt-4">📌 ${d.n}</p>
+    `;
+    [...tabsWrap.children].forEach((btn, i) => {
+      btn.classList.toggle('bg-olive-800', i === day - 1);
+      btn.classList.toggle('text-cream', i === day - 1);
+      btn.classList.toggle('bg-cream-2', i !== day - 1);
+      btn.classList.toggle('text-olive-900', i !== day - 1);
+    });
+  }
+
+  brooding.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = i + 1;
+    btn.className = 'w-9 h-9 rounded-full font-display font-bold text-sm bg-cream-2 text-olive-900 hover:bg-gold-500 hover:text-olive-950 transition';
+    btn.addEventListener('click', () => renderDay(i + 1));
+    tabsWrap.appendChild(btn);
+  });
+  renderDay(1);
+
+  const guideBtn = document.getElementById('guideWhatsapp');
+  guideBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    const msg = 'مرحبًا، أرغب في الاشتراك في دليل التحضين اليومي على واتساب لأول 14 يوم لدفعتي من كتاكيت Pure Line.';
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
